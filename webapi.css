@@ -1,0 +1,57 @@
+.beijing{
+    background-color: rgba(244, 242, 248,.7);
+   
+
+}
+
+.kaishi{
+    text-decoration: none;
+    color: rgb(74, 1, 195);
+
+}
+.beijing a{
+   text-decoration: none;
+   
+}
+.yr a:hover{
+    color: aliceblue;
+}
+.yr a{
+    color: aliceblue;
+
+}
+
+.kl{
+    background-color: rgb(255, 255, 255);
+}
+
+.lianjie{
+    color: rgb(74, 1, 195);
+}
+.lianjie:hover{
+    color: rgb(74, 1, 195);
+
+}
+
+.io{
+    background-image: linear-gradient(to right, rgba(11, 108, 255, 0.7), rgb(74, 1, 195));
+}
+.df{
+    border-radius: 20px;
+}
+
+.bj{
+    background-color: rgb(242, 242, 242);
+}
+
+.dibu a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.dibu a{
+    font-size: 13px;
+    color: black;
+}

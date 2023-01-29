@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./webapi.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- 新 Bootstrap5 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+  <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+  <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+  <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="./image/RE1Mu3b.png" alt="">
+      </a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">.NET</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">C#</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">功能</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./ASP.html">
+                ASP.NET Core</a>
+              <a class="dropdown-item" href="./webapi.html">Web API</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">登录</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="beijing pb-5">
+
+    <section>
+      <div class="container pt-5">
+        <div class="col-sm text-center">
+          <h2 class="fw-bolder gh fs-1">ASP.NET Web API</h2>
+          <p class="fw-bold text-wrap text-justify my-4 fs-5">免使用 C# 在任何平台上构建安全 REST API</p>
+          <button type="button" class="btn yr btn-primary mb-5 fw-bold">
+            <a class="" href="https://dotnet.microsoft.com/zh-cn/learn">开始</a>
+          </button>
+          <button type="button" class="btn yr btn-secondary mb-5 fw-bold">
+            <a class="" href="https://dotnet.microsoft.com/zh-cn/learn">阅读文档</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm">
+            <img src="./image/swimlane-rest-api.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm">
+            <h2 class="fw-bold">具有 .NET 和 C# 的 REST API</h2>
+            <p class="my-4">ASP.NET 助你轻松地生成可访问范围广泛的客户端(包括浏览器和移动设备)的服务。借助 ASP.NET，可以使用相同的框架和模式在同一项目中同时并行生成网页和服务。</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mt-5">
+      <div class="container ">
+        <div class="row d-flex align-items-center ">
+         
+          <div class="col-sm mt-5 d-flex justify-content-end">
+            <div class=" ">
+            <h2 class="fw-bold">简便的序列化</h2>
+            <p>ASP.NET 专为新式 Web 体验而设计。</p>
+            <p>终结点会自动序列化类，以正确格式化现成的 JSON。</p>
+            <p>不需要特殊配置。当然，对于具有唯一要求的终结点，可以自定义序列化。</p>
+          </div>
+        </div>
+
+          <div class="col-sm kl mt-5">
+            <pre>
+[ApiController]
+public class PeopleController : ControllerBase
+{
+    [HttpGet("people/all")]
+    public ActionResult<IEnumerable<Person>> GetAll()
+    {
+        return new []
+        {
+            new Person { Name = "Ana" },
+            new Person { Name = "Felipe" },
+            new Person { Name = "Emillia" }
+        };
+    }
+}
+
+public class Person
+{
+    public string Name { get; set; }
+}
+                </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm mt-5">
+            <img src="./image/swimlane-authentication-authorization.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm mt-5">
+            <h2 class="fw-bold">身份验证和授权</h2>
+            <p class="my-4">对行业标准 JSON Web 令牌(JWT)的内置支持有助于保护 API 终结点。基于策略的授权可以让你灵活定义代码中强大的访问控制规则—一切内容。</p>
+            <a href="" class="lianjie fw-bold">详细了解 ASP.NET 安全性</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="mt-5">
+      <div class="container ">
+        <div class="row  d-flex align-items-center">
+
+          <div class="col-sm mt-5  d-flex justify-content-end">
+            <div>
+          
+            <h2 class="fw-bold">正在与代码一起路由</h2>
+            <p>通过 ASP.NET，可以使用属性定义与代码内联的路由和谓词。</p>
+            <p>来自请求路径、查询字符串和请求正文的数据将自动绑定到方法参数。</p>
+            <a href="" class="lianjie fw-bold">详细了解 ASP.NET 中的路由</a>
+                
+          </div>
+          </div>
+
+          <div class="col-sm kl mt-5">
+            <pre>
+[ApiController]
+public class PeopleApiController : ControllerBase
+{
+// Some code omitted for clarity
+              
+[HttpGet("people/{id}")]
+public ActionResult<Person> Get(int id)
+{
+    var person = db.People.Find(id);
+              
+    if (person == null)
+    {
+      return NotFound();
+    }
+              
+    return person;
+}
+              
+[HttpPost("people/create")]
+public IActionResult Create(Person person)
+{
+    db.Add(person);
+    db.SaveChanges();
+    return Accepted();
+    }
+}
+                </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mt-5">
+      <div class="container ">
+        <div class="row d-flex align-items-center ">
+          <div class="col-sm mt-5">
+            <img src="./image/swimlane-secure-chat-app.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm mt-5">
+            <h2 class="fw-bold">
+              默认为 HTTPS</h2>
+            <p class="my-4">你不会部署没有安全性的应用，那么为什么在没有安全性的情况下测试它们呢? ASP.NET 为 HTTPS 提供现成的一流支持。自动生成测试证书并轻松导入它以启用本地 HTTPS，以便按预期的安全方式运行和调试应用。</p>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="mt-5">
+      <div class="container">
+          <div class="row d-flex align-items-center">
+
+              <div class="col-sm mt-3 d-flex justify-content-end">
+                  <div>
+                      <h2 class="mt-5 fw-bold">适用于任何平台的出色工具</h2>
+                      <p class="mt-4 text-wrap">构建、调试，并从任何平台部署到任何平台。
+                        然后从笔记本电脑进行调试!</p>
+                        <p>在生产中遇到问题?别担心...只需将调试程序附加到生产实例，</p>
+                      <a href="" class="lianjie fw-bold">详细了解 .NET 工具</a>
+
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <img src="./image/screenshot-aspet-api-debugging-vs.png" class="img-fluid" alt="">
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="mt-5">
+    <div class="container io pt-5 df text-center">
+      <div class="row d-flex text-light my-5">
+        <div class="col-sm ">
+          <h2 class="fs-1 fw-bold">准备好开始使用了吗?</h2>
+        </div>
+        <div class="col-sm  my-3">
+          <h3 class="mb-4 fs-5 fw-bold">
+            
+分步教程将帮助你在计算机上运行 具有 ASP.NET 的 Web API。</h3>
+          <button type="button" class="btn btn-light mb-5 fw-bold w-25">
+            <a class="kaishi" href="https://dotnet.microsoft.com/zh-cn/learn">开始</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+
+  <section class="bj">
+    <div class="container py-2">
+      <div class="row d-flex align-items-center w-100">
+        <div class="col-sm ">
+          <select class="form-select w-50" aria-label="Default select example">
+            <option selected>选择语言</option>
+            <option value="1">中文</option>
+            <option value="2">English</option>
+            <option value="3">한국어</option>
+          </select>
+        </div>
+
+        <div class="col-sm my-3 dibu d-flex justify-content-between">
+          <a href="https://dotnet.microsoft.com/zh-cn/learn/aspnet/what-is-aspnet-core">由.NET7.0.0提供支持</a>
+          <a href="https://support.microsoft.com/zh-CN/contactus/" class="mx-2">联系微软</a>
+          <a href="https://dotnet.microsoft.com/zh-cn/platform/support">支持</a>
+          <a href="https://privacy.microsoft.com/zh-cn/privacystatement" class="mx-2">隐私</a>
+          <a href="https://www.microsoft.com/zh-cn/legal/terms-of-use" class="mx-2">使用条款</a>
+          <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks">商标</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

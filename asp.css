@@ -1,0 +1,59 @@
+.beijing{
+     background-color: rgba(250, 250, 250,.9);
+}
+
+
+.lianjie{
+    color: rgb(74, 1, 195);
+    text-decoration: none;
+}
+.yu{
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 15px;
+}
+.yuuu i{
+    font-size: 26px;
+}
+
+.rt{
+    background-color: aquamarine;
+}
+
+p{
+        word-wrap: break-word;
+        word-break: break-all;
+}
+
+.kaishi{
+    text-decoration: none;
+    color: rgb(74, 1, 195);
+
+}
+
+.io{
+    background-image: linear-gradient(to right, rgba(81, 43, 212, 0.9), rgb(206, 3, 173,.8));
+}
+
+.df{
+    border-radius: 20px;
+}
+
+.beijing{
+    background-color: rgb(242, 242, 242,.2);
+}
+.bj{
+    background-color: rgb(242, 242, 242);
+}
+
+.dibu a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.dibu a{
+    font-size: 13px;
+    color: black;
+}
+

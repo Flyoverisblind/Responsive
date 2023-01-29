@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <div class="box">
+        <h2>Login</h2>
+        <div class="input-box">
+            <label>账号</label>
+            <input type="text" class="a" />
+        </div>
+        <div class="input-box">
+            <label>密码</label>
+            <input type="password" class="b" />
+        </div>
+        <div class="btn-box">
+            <a href="#">忘记密码?</a>
+            <div>
+                <button>登录</button>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        $(function () {
+
+            $("button").click(function () {
+
+                var kkk = {
+                    "phoneNumber": {
+                        "regionNumber": 0,
+                        "number": $(".a").val()
+                    },
+                    "password": $(".b").val()
+                }
+
+                $.ajax({
+                    type: "post",
+                    dataType: "json",
+                    url: "https://localhost:7141/api/Login/LoginByPhoneAndPassword",
+                    contentType: "application/json;charset=UTF-8",//指定消息请求类型
+                    data: JSON.stringify(kkk),//将js对象转成json对象
+                    complete: function (xhr, status) {
+
+                        if (xhr.status == 200) {
+
+                            alert("登录成功")
+                            $(location).attr('href', './index.html');
+                        } else {
+                            alert("登录失败")
+
+                        }
+
+                    }
+                });
+
+
+            })
+        })
+    </script>
+</body>
+
+</html>
